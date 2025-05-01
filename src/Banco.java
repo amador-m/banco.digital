@@ -12,22 +12,22 @@ public class Banco {
 	}
 
 	public void setNome(String nome) {
-        this.nome = nome;
-    }
+        	this.nome = nome;
+    	}
 
 	public List<Conta> getContas() {
 		return contas;
 	}
 
-    public void adicionarConta(Conta conta) {
-        contas.add(conta); 
-    }
-
-    public void listarClientes() {
-        System.out.println("\nClientes do Banco:");
-        for (int i = 0; i < contas.size(); i++) { // "Conta conta : contas" tmb roda
-            System.out.println("\t"+contas.get(i).getCliente().getNome()); // acessa cada conta pelo índice
-        }
+	public void adicionarConta(Conta conta) {
+	        contas.add(conta); 
+	}
+	
+	public void listarClientes() {
+	        System.out.println("\nClientes do Banco:");
+	        for (int i = 0; i < contas.size(); i++) { // "Conta conta : contas" tmb roda
+	            System.out.println("\t"+contas.get(i).getCliente().getNome()); // acessa cada conta pelo índice
+	        }
 	}
 
 }
